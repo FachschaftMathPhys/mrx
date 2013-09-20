@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="static/style.css"></head>
+        <script type="text/javascript" src="static/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="static/log.js"></script>
+        <script type="text/javascript" src="static/sms.js"></script>
+    </head>
+    <body>
+        <table id="log">
+            <thead>
+                <tr>
+                    <th>Zeit</th>
+                    <th>Eintrag</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <table id="incoming_sms">
+            <thead>
+                <tr>
+                    <th class="time">Zeit</th>
+                    <th class="number">Nummer</th>
+                    <th class="body">Body</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <form id="send_sms" action="javascript:sendSMS()">
+            <label for="Number">Empfänger</label><input id="Number" name="Number">
+            <label for="Body">Text</label><textarea id="Body" name="Body" rows="4"></textarea>
+            <input type="submit" value="Send SMS">
+        </form>
+        <select multiple=true id="registered">
+        </select>
+        <form id="register">
+            <label for="Number">Nummer</label><input id="Number" name="Number">
+            <button id="regbutton" type="button">Register Number</button>
+            <button id="mrxbutton" type="button">Set as Mr. X</button>
+        </form>
+    </body>
+</html>

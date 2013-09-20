@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+table#log td, table#log th {
+    padding: 0.3em;
+}
+
+table#log {
+    width: 70%;
+    overflow: auto;
+    height: 45%;
+    display: block;
+    margin: 1em;
+}
+
+table#log tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+table#log tr:nth-child(odd) {
+    background: #dddddd;
+}
+
+table#log tr.warning {
+    background: #ffff00;
+}
+
+table#log tr.error {
+    background: #ff6666;
+}
+
+table#log tr.fatal {
+    background: #aa0000;
+    color: #ffffff;
+}
+
+table#incoming_sms td, table#incoming_sms th {
+    padding: 0.3em;
+}
+
+table#incoming_sms {
+    width: 70%;
+    height: 45%;
+    display: block;
+    margin: 1em;
+    overflow: auto;
+}
+
+table#incoming_sms tr:nth-child(odd) {
+    background: #dddddd;
+}
+
+form#send_sms {
+    width: 20em;
+    position: fixed;
+    right: 2em;
+    top: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+form#send_sms input, form#send_sms textarea {
+    width: 100%;
+}
+
+form#register {
+    width: 20em;
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+form#register input {
+    width: 100%;
+}
+
+select#registered {
+    width: 26.45em;
+    position: fixed;
+    right: 2.5em;
+    top: 18em;
+    height: 30em;
+    background: white;
+}
+
+button {
+    width: 49%;
+}
