@@ -279,7 +279,7 @@ func InitSMS() {
 	}
 	go ReadSMS()
 
-	sender = bulkSMS.New("FSMathPhys", "wahsu3coZa8xaek1iw6g", "491606632613")
+	sender = bulkSMS.New("FSMathPhys", "password", "491606632613")
 
 	credits, err := sender.GetCredits()
 	if err != nil {
